@@ -12,6 +12,9 @@ module.exports = {
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        "background":"#012622",
+        "bluish":"#368f8b",
+        "gunmetalgrey":"#818589"
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
