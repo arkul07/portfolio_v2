@@ -31,10 +31,10 @@ function Navbar() {
       <div className="ml-auto">
         {isDesktop ? (
           <ul className="flex justify-evenly list-none">
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl " : "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl "}>About</li>
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl " : "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl "}>Skills</li>
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl " : "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl "}>Projects</li>
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl " : "mr-5 p-3 px-8 hover:bg-gunmetalgrey rounded-2xl "}>Contact</li>
+            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>About</li>
+            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>Skills</li>
+            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>Projects</li>
+            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>Contact</li>
           </ul>
         ) : (
           <div>
