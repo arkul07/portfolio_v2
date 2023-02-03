@@ -6,52 +6,52 @@ function Skills() {
   const frontendskills = [
     {
       name:"React.js",
-      icon:"devicon-react-original colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       proficiency:4
     },
     {
       name:"Svelte.js",
-      icon:"devicon-svelte-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
       proficiency:3
     },
     {
       name:"Vue.js",
-      icon:"devicon-vuejs-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
       proficiency:2
     },
     {
       name:"HTML5",
-      icon:"devicon-html5-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       proficiency:5
     },
     {
       name:"CSS3",
-      icon:"devicon-css3-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       proficiency:5
     },
     {
       name:"Javascript (ES6+)",
-      icon:"devicon-javascript-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       proficiency:4
     },
     {
       name:"Typescript",
-      icon:"devicon-typescript-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       proficiency:2
     },
     {
       name:"Redux.js",
-      icon:"devicon-redux-original colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
       proficiency:2
     },
-    {
-      name:"EJS",
-      icon:"",
-      proficiency:3
-    },
+    // {
+    //   name:"EJS",
+    //   icon:"",
+    //   proficiency:3
+    // },
     {
       name:"TailwindCSS",
-      icon:"devicon-tailwindcss-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
       proficiency:3
     },
   ]
@@ -59,17 +59,17 @@ function Skills() {
   const backendskills = [
     {
       name:"Node.js",
-      icon:"devicon-nodejs-plain-wordmark colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
       proficiency:3
     },
     {
       name:"MongoDB",
-      icon:"devicon-mongodb-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
       proficiency:3
     },
     {
       name:"MySQL",
-      icon:"devicon-mysql-plain-wordmark colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
       proficiency:3
     },
   ]
@@ -77,27 +77,27 @@ function Skills() {
   const otherskills = [
     {
       name:"Java",
-      icon:"devicon-java-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
       proficiency:4
     },
     {
       name:"C Programming",
-      icon:"devicon-c-plain colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
       proficiency:3
     },
     {
       name:"Python",
-      icon:"devicon-python-plain-wordmark",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       proficiency:3
     },
     {
       name:"Pytorch",
-      icon:"devicon-pytorch-plain-wordmark colore",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
       proficiency:2
     },
     {
       name:"Git/Github",
-      icon:"devicon-github-original colored",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       proficiency:4
     },
   ]
@@ -127,15 +127,15 @@ function Skills() {
     <div className="p-10">
       <div>
         <div className="text-xl mt-10 text-dark-jungle-green bg-india-green">Frontend Web Development</div>
-        <div className="flex flex-wrap p-10 bg-dark-jungle-green">{frontendElements}</div>
+        <div className="flex justify-center flex-wrap p-10 bg-dark-jungle-green">{frontendElements}</div>
       </div>
       <div>
         <div className="text-xl mt-10 text-india-green">Backend Web Development</div>
-        <div className="flex flex-wrap p-10 bg-dark-jungle-green">{backendElements}</div>
+        <div className="flex justify-center flex-wrap p-10 bg-dark-jungle-green">{backendElements}</div>
       </div>
       <div>
         <div className="text-xl mt-10 text-india-green">Others</div>
-        <div className="flex flex-wrap p-10 bg-dark-jungle-green">{otherElements}</div>
+        <div className="flex justify-center flex-wrap p-10 bg-dark-jungle-green">{otherElements}</div>
       </div>
     </div>
   );

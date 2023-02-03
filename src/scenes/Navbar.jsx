@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useMediaQuery from "../Hooks/useMediaQuery";
 import { GiHamburgerMenu } from "react-icons/gi";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Navbar() {
   const [menuToggled, setMenuToggled] = useState(false);
@@ -27,14 +28,48 @@ function Navbar() {
           : "flex justify-between align-middle p-4 z-10 sticky top-0 opacity-100"
       }
     >
-      <div className="text-2xl"><span className="font-bold">Arya</span>Kulkarni</div>
+      <div className="text-2xl my-auto">
+        <span className="font-bold">Arya</span>Kulkarni
+      </div>
       <div className="ml-auto">
         {isDesktop ? (
           <ul className="flex justify-evenly list-none">
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>About</li>
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>Skills</li>
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>Projects</li>
-            <li className={hasScrolled ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl " : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "}>Contact</li>
+            <li
+              className={
+                hasScrolled
+                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+              }
+            >
+              About
+            </li>
+            <li
+              className={
+                hasScrolled
+                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+              }
+            >
+              Skills
+            </li>
+            <li
+              className={
+                hasScrolled
+                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+              }
+            >
+              Projects
+            </li>
+            <li
+              className={
+                hasScrolled
+                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+              }
+            >
+              Contact
+            </li>
           </ul>
         ) : (
           <div>
