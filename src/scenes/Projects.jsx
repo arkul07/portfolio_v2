@@ -1,8 +1,11 @@
 import React from 'react'
+import ProjectsCard from '../components/ProjectsCard'
 
 function Projects() {
   return (
-    <div className="h-96">Projects</div>
+    <div className="p-10">
+      <div></div>
+    </div>
   )
 }
 

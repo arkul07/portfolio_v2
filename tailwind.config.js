@@ -17,7 +17,7 @@ module.exports = {
         "gunmetalgrey":"#818589",
         "rich-black":"#010B12",
         "india-green":"#0C8900",
-        "Yellow-Green":"#2BC20E",
+        "yellow-green":"#2BC20E",
         "mango-green":"#9CFF00",
         "neon-green":"#39FF13",
         "dark-jungle-green":"#1E1F21"

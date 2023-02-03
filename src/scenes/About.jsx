@@ -3,7 +3,7 @@ import Internship from "../components/Internship";
 
 function About() {
   return (
-    <div className="h-96 p-10">
+    <div className="p-10">
       <div>About</div>
       <div>
         I am currently a junior studying Computer Science at Birla Institute of
@@ -13,7 +13,6 @@ function About() {
       </div>
       <div className="mt-10">Work Experience</div>
       <div className="flex">
-        <div>Image</div>
         <div className="ml-10">
           <Internship
             role={"Full Stack Development Intern"}
@@ -24,7 +23,15 @@ function About() {
               "Helped implement categorized searching using Fuse.js to improve user experience",
             ]}
           />
-          {/* <Internship/> */}
+          <Internship
+            role={"Backend Development Intern"}
+            company={"WeSwap Mobility Solutions"}
+            technolgies={"Node.js, Express.js, MongoDB, REST APIs"}
+            work={[
+              "Helped design ER models based on the app's requirements and translated those into schemas using Mongoose.",
+              "Built APIs to handle server requests and helped the frontend team integrate into the app.",
+            ]}
+          />
         </div>
       </div>
     </div>
