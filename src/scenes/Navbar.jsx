@@ -27,7 +27,7 @@ function Navbar() {
           : "flex justify-between align-middle p-4 z-10 sticky top-0 opacity-100"
       }
     >
-      <div>Arya Kulkarni</div>
+      <div className="text-2xl"><span className="font-bold">Arya</span>Kulkarni</div>
       <div className="ml-auto">
         {isDesktop ? (
           <ul className="flex justify-evenly list-none">

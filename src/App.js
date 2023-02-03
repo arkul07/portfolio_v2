@@ -9,7 +9,7 @@ import Footer from './scenes/Footer';
 
 function App() {
   return (
-    <div className="App font-sans bg-background text-bluish">
+    <div className="App font-sans bg-rich-black text-neon-green">
      <Navbar/>
      <Profile/>
      <About/>
