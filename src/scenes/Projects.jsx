@@ -44,7 +44,7 @@ function Projects() {
   });
 
   return (
-    <div className="p-10" id="projects">
+    <div className="p-20 mt-10" id="projects">
       <div className="flex flex-wrap">{projectElements}</div>
     </div>
   );

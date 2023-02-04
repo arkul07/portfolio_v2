@@ -3,7 +3,6 @@ import useMediaQuery from "../Hooks/useMediaQuery";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -45,62 +44,44 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
       }
     >
       <div className="text-2xl my-auto">
-        <span className="font-bold">Arya</span>Kulkarni
+        <Link
+          page="AryaKulkarni"
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+          className='hidden'
+        />
+        {/* <span className="font-bold">Arya</span>Kulkarni */}
       </div>
       <div className="ml-auto">
         {isDesktop ? (
           <ul className="flex justify-evenly list-none">
-            <li
-              className={
-                hasScrolled
-                  ? "mr-5 p-3 px-8"
-                  : "mr-5 p-3 px-8"
-              }
-            >
-           <Link
-              page="About"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            </li>
-            <li
-              className={
-                hasScrolled
-                  ? "mr-5 p-3 px-8 "
-                  : "mr-5 p-3 px-8 "
-              }
-            >
+            <li className={hasScrolled ? "mr-5 p-3 px-8" : "mr-5 p-3 px-8"}>
               <Link
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+                page="About"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </li>
-            <li
-              className={
-                hasScrolled
-                  ? "mr-5 p-3 px-8 "
-                  : "mr-5 p-3 px-8 "
-              }
-            >
+            <li className={hasScrolled ? "mr-5 p-3 px-8 " : "mr-5 p-3 px-8 "}>
               <Link
-              page="Projects"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+                page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </li>
-            <li
-              className={
-                hasScrolled
-                  ? "mr-5 p-3 px-8 "
-                  : "mr-5 p-3 px-8 "
-              }
-            >
-             <Link
-              page="Contact"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+            <li className={hasScrolled ? "mr-5 p-3 px-8 " : "mr-5 p-3 px-8 "}>
+              <Link
+                page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+            </li>
+            <li className={hasScrolled ? "mr-5 p-3 px-8 " : "mr-5 p-3 px-8 "}>
+              <Link
+                page="Contact"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
             </li>
           </ul>
         ) : (

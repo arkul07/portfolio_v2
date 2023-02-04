@@ -7,10 +7,14 @@ import Projects from './scenes/Projects';
 import Contact from './scenes/Contact';
 import Footer from './scenes/Footer';
 import Sidebar from './scenes/Sidebar';
+import { motion } from "framer-motion";
+import { useState } from 'react';
 
 function App() {
+
+
   return (
-    <div className="App font-sans bg-rich-black text-neon-green">
+    <div className="App font-titilium bg-[url('./assets/Meteor.svg')] text-neon-green">
      <Navbar/>
      <Sidebar/>
      <Profile/>

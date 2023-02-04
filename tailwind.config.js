@@ -1,3 +1,5 @@
+const { url } = require("inspector");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -12,15 +14,14 @@ module.exports = {
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
-        "background":"#012622",
-        "bluish":"#368f8b",
-        "gunmetalgrey":"#818589",
-        "rich-black":"#010B12",
-        "india-green":"#0C8900",
-        "yellow-green":"#2BC20E",
-        "mango-green":"#9CFF00",
-        "neon-green":"#39FF13",
-        "dark-jungle-green":"#1E1F21"
+        bluish: "#368f8b",
+        gunmetalgrey: "#818589",
+        "rich-black": "#010B12",
+        "india-green": "#0C8900",
+        "yellow-green": "#2BC20E",
+        "mango-green": "#9CFF00",
+        "neon-green": "#39FF13",
+        "dark-jungle-green": "#1E1F21",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -29,9 +30,11 @@ module.exports = {
         "gradient-rainblue":
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
+      bgImage: url('/src/assets/Meteor.svg'),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
+        titilium: ["Titilium Web","sans-serif"]
       },
       content: {
         brush: "url('./assets/brush.png')",

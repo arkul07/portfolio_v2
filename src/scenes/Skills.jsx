@@ -125,6 +125,7 @@ function Skills() {
 
   return (
     <div className="p-20" id="skills">
+    <div className="text-3xl text-neon-green text-center mt-5">My Skills</div>
       <div>
         <div className="text-xl mt-10 text-black bg-india-green">Frontend Web Development</div>
         <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{frontendElements}</div>

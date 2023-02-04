@@ -6,19 +6,19 @@ import weswap from "../assets/weswap.png";
 
 function About() {
   return (
-    <div className="p-20" id="about">
-      <div>About</div>
-      <div className="flex justify-between bg-dark-jungle-green">
+    <div className="p-20 mt-10" id="about">
+      <div className="bg-india-green text-black text-xl mt-5">About</div>
+      <div className="flex justify-between bg-dark-jungle-green p-5">
         <div className="">
-          I am currently a 19 year old junior studying Computer Science at Birla
+          I am currently a 20 year old pre-final year student studying Computer Science at Birla
           Institute of Technology and Science, Pilani. I am passionate about
           Full Stack Web Development and have recently begun exploring Machine
           Learning and Artificial Intelligence.
         </div>
         {/* <div className="w-50 h-50"><img src={profile} className="w-30 h-30 rounded-full"/></div> */}
       </div>
-      <div className="bg-dark-jungle-green p-10 mt-10">
-        <div className="">Work Experience</div>
+      <div className="mt-10 bg-india-green text-black text-xl">Work Experience</div>
+      <div className="bg-dark-jungle-green p-10 rounded-xl">
         <div className="flex">
           <div className="ml-10">
             <Internship
