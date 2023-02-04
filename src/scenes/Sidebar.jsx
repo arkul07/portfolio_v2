@@ -7,14 +7,14 @@ function Sidebar() {
     <div className="h-screen flex flex-col justify-evenly right-5 z-10 fixed">
       <div></div>
       <div>
-        <div className="hover:text-blue my-10">
-          <AiFillLinkedin size={48} />
+        <div className="hover:text-blue cursor-pointer my-10">
+          <a href=""><AiFillLinkedin size={48} /></a>
         </div>
-        <div className="hover:text-blue my-10">
-          <AiFillGithub size={48} />
+        <div className="hover:text-blue cursor-pointer my-10">
+        <a href=""><AiFillGithub size={48} /></a>
         </div>
-        <div className="hover:text-blue my-10">
-          <FiMail size={48} />
+        <div className="hover:text-blue cursor-pointer my-10">
+        <a href=""><FiMail size={48} /></a>
         </div>
       </div>
     </div>
