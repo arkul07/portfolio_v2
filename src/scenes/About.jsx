@@ -1,37 +1,49 @@
 import React from "react";
 import Internship from "../components/Internship";
+import profile from "../assets/profile.jpeg";
+import printerverse from "../assets/printerverse.png";
+import weswap from "../assets/weswap.png";
 
 function About() {
   return (
-    <div className="p-10">
+    <div className="p-20" id="about">
       <div>About</div>
-      <div>
-        I am currently a junior studying Computer Science at Birla Institute of
-        Technology and Science, Pilani. I am passionate about Full Stack Web
-        Development and have recently begun exploring Machine Learning and
-        Artificial Intelligence
+      <div className="flex justify-between bg-dark-jungle-green">
+        <div className="">
+          I am currently a 19 year old junior studying Computer Science at Birla
+          Institute of Technology and Science, Pilani. I am passionate about
+          Full Stack Web Development and have recently begun exploring Machine
+          Learning and Artificial Intelligence.
+        </div>
+        {/* <div className="w-50 h-50"><img src={profile} className="w-30 h-30 rounded-full"/></div> */}
       </div>
-      <div className="mt-10">Work Experience</div>
-      <div className="flex">
-        <div className="ml-10">
-          <Internship
-            role={"Full Stack Development Intern"}
-            company={"Printerverse"}
-            technolgies={"Svelte.js, Fuse.js"}
-            work={[
-              "Designed, built and tested responsive layouts for the progressive web application in Svelte.",
-              "Helped implement categorized searching using Fuse.js to improve user experience",
-            ]}
-          />
-          <Internship
-            role={"Backend Development Intern"}
-            company={"WeSwap Mobility Solutions"}
-            technolgies={"Node.js, Express.js, MongoDB, REST APIs"}
-            work={[
-              "Helped design ER models based on the app's requirements and translated those into schemas using Mongoose.",
-              "Built APIs to handle server requests and helped the frontend team integrate into the app.",
-            ]}
-          />
+      <div className="bg-dark-jungle-green p-10 mt-10">
+        <div className="">Work Experience</div>
+        <div className="flex">
+          <div className="ml-10">
+            <Internship
+              image={printerverse}
+              role={"Full Stack Development Intern"}
+              company={"Printerverse"}
+              duration={"December 2022 - Present"}
+              technolgies={"Svelte.js, Fuse.js"}
+              work={[
+                "Designed, built and tested responsive layouts for the progressive web application in Svelte.",
+                "Helped implement categorized searching using Fuse.js to improve user experience",
+              ]}
+            />
+            <Internship
+              image={weswap}
+              role={"Backend Development Intern"}
+              duration={"May 2022 - July 2022"}
+              company={"WeSwap Mobility Solutions"}
+              technolgies={"Node.js, Express.js, MongoDB, REST APIs"}
+              work={[
+                "Helped design ER models based on the app's requirements and translated those into schemas using Mongoose.",
+                "Built APIs to handle server requests and helped the frontend team integrate into the app.",
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -3,7 +3,23 @@ import useMediaQuery from "../Hooks/useMediaQuery";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-function Navbar() {
+
+const Link = ({ page, selectedPage, setSelectedPage }) => {
+  const lowerCasePage = page.toLowerCase();
+  return (
+    <AnchorLink
+      className={`${
+        selectedPage === lowerCasePage ? "text-yellow" : ""
+      } hover:text-yellow transition duration-500`}
+      href={`#${lowerCasePage}`}
+      onClick={() => setSelectedPage(lowerCasePage)}
+    >
+      {page}
+    </AnchorLink>
+  );
+};
+
+function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
   const [menuToggled, setMenuToggled] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const isDesktop = useMediaQuery("(min-width:768px)");
@@ -37,38 +53,54 @@ function Navbar() {
             <li
               className={
                 hasScrolled
-                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
-                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  ? "mr-5 p-3 px-8"
+                  : "mr-5 p-3 px-8"
               }
             >
-              About
+           <Link
+              page="About"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
             </li>
             <li
               className={
                 hasScrolled
-                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
-                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  ? "mr-5 p-3 px-8 "
+                  : "mr-5 p-3 px-8 "
               }
             >
-              Skills
+              <Link
+              page="Skills"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
             </li>
             <li
               className={
                 hasScrolled
-                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
-                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  ? "mr-5 p-3 px-8 "
+                  : "mr-5 p-3 px-8 "
               }
             >
-              Projects
+              <Link
+              page="Projects"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
             </li>
             <li
               className={
                 hasScrolled
-                  ? "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
-                  : "mr-5 p-3 px-8 hover:bg-dark-jungle-green rounded-2xl "
+                  ? "mr-5 p-3 px-8 "
+                  : "mr-5 p-3 px-8 "
               }
             >
-              Contact
+             <Link
+              page="Contact"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
             </li>
           </ul>
         ) : (
