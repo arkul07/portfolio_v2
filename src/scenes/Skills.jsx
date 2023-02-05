@@ -1,7 +1,10 @@
 import React from "react";
 import SkillsCard from "../components/SkillsCard";
+import useMediaQuery from "../Hooks/useMediaQuery";
 
 function Skills() {
+
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   const frontendskills = [
     {
@@ -124,18 +127,18 @@ function Skills() {
 
 
   return (
-    <div className="p-20" id="skills">
+    <div className={isDesktop ? "p-20" : "p-10"} id="skills">
     <div className="text-3xl text-neon-green text-center mt-5">My Skills</div>
       <div>
-        <div className="text-xl mt-10 text-black bg-india-green">Frontend Web Development</div>
+        <div className="text-xl mt-10 text-black bg-neon-green pl-2">Frontend Web Development</div>
         <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{frontendElements}</div>
       </div>
       <div>
-        <div className="text-xl mt-10 text-black bg-india-green">Backend Web Development</div>
+        <div className="text-xl mt-10 text-black bg-neon-green pl-2">Backend Web Development</div>
         <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{backendElements}</div>
       </div>
       <div>
-        <div className="text-xl mt-10 text-black bg-india-green">Others</div>
+        <div className="text-xl mt-10 text-black bg-neon-green pl-2">Others</div>
         <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{otherElements}</div>
       </div>
     </div>

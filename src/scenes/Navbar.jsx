@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import useMediaQuery from "../Hooks/useMediaQuery";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import SmallScreenSidebar from "../components/SmallScreenSidebar";
+import { ImCross } from "react-icons/im";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -43,12 +45,12 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
           : "flex justify-between align-middle p-4 z-10 sticky top-0 opacity-100"
       }
     >
-      <div className="text-2xl my-auto">
+      <div className={menuToggled ? "text-2xl" : "text-2xl my-auto"}>
         <Link
           page="AryaKulkarni"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
-          className='hidden'
+          className="hidden"
         />
         {/* <span className="font-bold">Arya</span>Kulkarni */}
       </div>
@@ -89,18 +91,15 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
             <GiHamburgerMenu
               size={32}
               onClick={() => setMenuToggled(!menuToggled)}
+              className={menuToggled ? "hidden" : ""}
+            />
+            <ImCross
+              size={24}
+              onClick={() => setMenuToggled(!menuToggled)}
+              className={!menuToggled ? "hidden" : "absolute right-5 top-5"}
             />
 
-            {menuToggled && (
-              <div>
-                <ul className="flex flex-col list-none">
-                  <li>About</li>
-                  <li>Skills</li>
-                  <li>Projects</li>
-                  <li>Contact</li>
-                </ul>
-              </div>
-            )}
+            {menuToggled && <SmallScreenSidebar />}
           </div>
         )}
       </div>

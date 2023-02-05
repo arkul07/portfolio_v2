@@ -35,8 +35,8 @@ function Contact() {
                 <span>+1 562-503-5564 / +91 9028083741</span>
               </div>
               <div className="mb-20">
-                <FiMail size={36} className="inline mr-5"></FiMail>
-                <span>kulkarni.arya1209@gmail.com</span>
+                <FiMail size={30} className={isDesktop ? "inline mr-5" :"inline mr-2"}></FiMail>
+                <span className="text-sm">kulkarni.arya1209@gmail.com</span>
               </div>
               <div>
                 <hr className="bg-neon-green"/>

@@ -1,10 +1,12 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
+import useMediaQuery from "../Hooks/useMediaQuery";
 
 function Sidebar() {
+  const isDesktop = useMediaQuery("(min-width: 1150px)");
   return (
-    <div className="h-screen flex flex-col justify-evenly right-5 z-10 fixed">
+    <div className={isDesktop ? "h-screen flex flex-col justify-evenly right-5 z-10 fixed" :"hidden"}>
       <div></div>
       <div>
         <div className="hover:text-india-green cursor-pointer my-10">
