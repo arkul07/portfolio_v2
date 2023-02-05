@@ -9,7 +9,7 @@ function About() {
     <div className="p-20 mt-10" id="about">
       <div className="bg-india-green text-black text-xl mt-5">About</div>
       <div className="flex justify-between bg-dark-jungle-green p-5">
-        <div className="">
+        <div className="text-xl">
           I am currently a 20 year old pre-final year student studying Computer Science at Birla
           Institute of Technology and Science, Pilani. I am passionate about
           Full Stack Web Development and have recently begun exploring Machine

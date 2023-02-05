@@ -13,7 +13,7 @@ function Sidebar() {
         <div className="hover:text-india-green cursor-pointer my-10">
         <a href="https://github.com/AryaKulkarni"><AiFillGithub size={48} /></a>
         </div>
-        <div className="hover:text-inida-green cursor-pointer my-10">
+        <div className="hover:text-india-green cursor-pointer my-10">
         <a href="mailto:kulkarni.arya1209@gmail.com"><FiMail size={48} /></a>
         </div>
       </div>

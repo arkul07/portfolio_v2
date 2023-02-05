@@ -5,7 +5,7 @@ function Projects() {
   const projects = [
     {
       name: "OpenAI Codex",
-      depiction: "",
+      depiction: "../assets/codex.png",
       description:
         "A programming codex built using the OpenAI API. Ask any question relate to programming and get an answer.",
       link: "https://github.com/AryaKulkarni/openai_codex",
@@ -14,7 +14,7 @@ function Projects() {
     },
     {
       name: "Restaurant Landing Page",
-      depiction: "",
+      depiction: "../assets/restaurantlanding.png",
       description:
         "A fully responsive landing page or a restaurant built using React.js",
       link: "https://github.com/AryaKulkarni/restaurant_landing_page",
@@ -45,7 +45,7 @@ function Projects() {
 
   return (
     <div className="p-20 mt-10" id="projects">
-      <div className="flex flex-wrap">{projectElements}</div>
+      <div className="flex flex-col justify-center items-center">{projectElements}</div>
     </div>
   );
 }
