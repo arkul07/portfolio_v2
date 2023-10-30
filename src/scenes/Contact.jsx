@@ -101,7 +101,7 @@ function Contact() {
                 <hr className="bg-neon-green" />
                 <div className="flex justify-evenly my-5">
                   <a
-                    href="https://github.com/AryaKulkarni"
+                    href="https://github.com/arkul07"
                     className="hover:cursor-pointer hover:text-india-green"
                   >
                     <AiFillGithub size={40} className="inline"></AiFillGithub>

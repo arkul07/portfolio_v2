@@ -6,11 +6,19 @@ function Projects() {
   const isDesktop = useMediaQuery("(min-width: 1150px)");
   const projects = [
     {
+      name:"EstateExplorer",
+      depiction:"./assets/EstateExplorer.png",
+      description:"EstateExplorer is the best place to find your next perfect place to live.We have a wide range of properties for you to choose from.",
+      link:"https://github.com/arkul07/estateexplorer",
+      hosted:true,
+      hostedLink:"https://estate-explorer1.onrender.com/"
+    },
+    {
       name: "OpenAI Codex",
       depiction: "./assets/codex.png",
       description:
         "A programming codex built using the OpenAI API. Ask any question related to programming and get an answer.",
-      link: "https://github.com/AryaKulkarni/openai_codex",
+      link: "https://github.com/arkul07/openai_codex",
       hosted:true,
       hostedLink:"https://openai-codex-sigma.vercel.app/"
     },
@@ -19,7 +27,7 @@ function Projects() {
       depiction: "./assets/restaurantlanding.png",
       description:
         "A fully responsive landing page for a restaurant built using React.js",
-      link: "https://github.com/AryaKulkarni/restaurant_landing_page",
+      link: "https://github.com/arkul07/restaurant_landing_page",
       hosted:true,
       hostedLink:"https://restaurant-landing-page-psi.vercel.app/"
     },
@@ -28,7 +36,7 @@ function Projects() {
       depiction: "./assets/dictionary.png",
       description:
         "A dictionary website that displays information for any inputted word. Used the api available at https://dictionaryapi.dev/ and built the site using Express and EJS",
-      link: "https://github.com/AryaKulkarni/Dictionary_Project",
+      link: "https://github.com/arkul07/Dictionary_Project",
       hosted:false
     },
     // {
@@ -49,7 +57,7 @@ function Projects() {
     <div className={isDesktop ? "p-20 mt-10" :"p-10 mt-10"} id="projects">
       <div className="text-center text-3xl">Featured Projects</div>
       <div className="flex flex-col justify-center items-center">{projectElements}</div>
-      <div className="text-center hover:text-india-green"><a href="https://github.com/AryaKulkarni" className="mt-10 text-center text-2xl underline">Visit my Github for other projects!</a></div>
+      <div className="text-center hover:text-india-green"><a href="https://github.com/arkul07" className="mt-10 text-center text-2xl underline">Visit my Github for other projects!</a></div>
     </div>
   );
 }
