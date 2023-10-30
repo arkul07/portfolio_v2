@@ -10,11 +10,11 @@ function Internship(props) {
       </div>
       <div className={isDesktop ? "ml-10" :""}>
         <div className="text-3xl">
-          <span className="underline mb-4">{props.role}</span>
-          <div className="text-2xl mt-5">{props.company}</div>
+          <span className="mb-4">{props.role}</span>
+          <div className="text-2xl mt-5 underline">{props.company}</div>
           <div className="text-xl mb-5">({props.duration})</div>
         </div>
-        <div className="mb-5"><span className="underline">Technologies Used:</span> {props.technolgies}</div>
+        <div className="mb-5"><span className="">Technologies Used:</span> {props.technolgies}</div>
         <ul>
           {props.work.map((work) => {
             return <li className="mb-2">{work}</li>;

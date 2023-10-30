@@ -12,9 +12,9 @@ function About() {
       <div className="bg-neon-green text-black text-xl mt-5 pl-2">About</div>
       <div className={isDesktop ? "flex justify-between bg-dark-jungle-green p-5" : "flex flex-col items-center bg-dark-jungle-green p-5"}>
         <div>
-          <img src={profile} className={isDesktop ? "rounded-3xl h-full w-3/4 mx-auto" : "rounded-3xl h-full w-full mx-auto mb-10"} />
+          {/* <img src={profile} className={isDesktop ? "rounded-3xl h-full w-3/4 mx-auto" : "rounded-3xl h-full w-full mx-auto mb-10"} /> */}
         </div>
-        <div className="text-xl w-3/4 leading-16">
+        <div className="text-xl leading-16">
           Hello! I am a driven and eager student with a passion for technology
           and a strong desire to pursue a career as a full-stack web developer.
           I have a strong foundation in programming concepts and experience
