@@ -10,7 +10,7 @@ function Profile() {
           <div className="text-xl">a Full Stack Developer</div>
           <div className="text-lg">B.E. Computer Science Engineering</div>
           <div className="text-sm">(Expected Graduation: May 2024)</div>
-          <a href="https://drive.google.com/file/d/1YPHr2WFGS-SEO4NAYPEFtux7ZQaWp1W5/view?usp=share_link"><button className="border-2 border-neon-green rounded-xl p-2 mt-10 px-6 hover:bg-neon-green hover:text-dark-jungle-green">Resume</button></a>
+          <a href="https://drive.google.com/file/d/1fQDV7oHVMLEjgn7pGe6yBEB_sO2maz-i/view?usp=drive_link"><button className="border-2 border-neon-green rounded-xl p-2 mt-10 px-6 hover:bg-neon-green hover:text-dark-jungle-green">Resume</button></a>
         </div>
       </div>
     </div>
