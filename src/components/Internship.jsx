@@ -6,7 +6,7 @@ function Internship(props) {
   return (
     <div className={isDesktop ? "flex my-10 text-xl" :"flex flex-col my-10 text-xl"}>
       <div className="h-full mb-10 mr-10">
-        <img src={props.image} className='mb-5'/>
+        {/* <img src={props.image} className='mb-5 w-[500px] h-[300px]'/> */}
       </div>
       <div className={isDesktop ? "ml-10" :""}>
         <div className="text-3xl">

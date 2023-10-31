@@ -4,6 +4,7 @@ import profile from "../assets/profile.jpeg";
 import printerverse from "../assets/printerverse.png";
 import weswap from "../assets/weswap.png";
 import useMediaQuery from '../Hooks/useMediaQuery'
+import bluejeans from "../assets/BlueJeans.png"
 
 function About() {
   let isDesktop = useMediaQuery("(min-width:768px)")
@@ -36,11 +37,21 @@ function About() {
       <div className="bg-dark-jungle-green p-10 rounded-xl">
         <div className="flex">
           <div className="ml-10">
+          <Internship
+              image={bluejeans}
+              role={"Intern"}
+              company={"BlueJeans By Verizon"}
+              duration={"July 2023 - Present"}
+              technolgies={"Java, Spring, MySQL, Zookeeper, Docker"}
+              work={[
+                "Revamping the core Recording Service microservice from Java 8 to Java 17, leveraging the Spring Framework to enhance the scalability, modularity, and maintainability of the microservice, resulting in improved code quality and development efficiency.",
+              ]}
+            />
             <Internship
               image={printerverse}
               role={"Full Stack Development Intern"}
               company={"Printerverse"}
-              duration={"December 2022 - Present"}
+              duration={"December 2022 - February 2022"}
               technolgies={"Svelte.js, Fuse.js"}
               work={[
                 "Designed, built and tested responsive layouts for the progressive web application in Svelte.",

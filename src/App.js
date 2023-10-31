@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <div className="App font-titilium bg-[url('./assets/Meteor.svg')] text-neon-green">
+    <div className="App font-sans bg-[url('./assets/Meteor.svg')] text-neon-green">
      <Navbar/>
      <Sidebar/>
      <Profile/>

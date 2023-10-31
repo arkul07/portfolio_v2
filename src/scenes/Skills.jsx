@@ -66,6 +66,11 @@ function Skills() {
       proficiency:2
     },
     {
+      name:"Spring",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
+      proficiency:2
+    },
+    {
       name:"MongoDB",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
       proficiency:2
@@ -96,6 +101,11 @@ function Skills() {
     {
       name:"Pytorch",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+      proficiency:1
+    },
+    {
+      name:"Docker",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg",
       proficiency:1
     },
     {
