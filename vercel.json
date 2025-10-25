@@ -1,5 +1,9 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "framework": "create-react-app",
+  "nodeVersion": "22.x",
   "builds": [
     {
       "src": "package.json",
@@ -20,10 +24,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "functions": {
-    "src/pages/api/**/*.js": {
-      "runtime": "nodejs22.x"
-    }
-  }
+  ]
 }
