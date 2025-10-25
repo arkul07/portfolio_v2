@@ -7,22 +7,24 @@ import Projects from './scenes/Projects';
 import Contact from './scenes/Contact';
 import Footer from './scenes/Footer';
 import Sidebar from './scenes/Sidebar';
-import { motion } from "framer-motion";
-import { useState } from 'react';
 
 function App() {
-
-
   return (
-    <div className="App font-sans bg-[url('./assets/Meteor.svg')] text-neon-green">
-     <Navbar/>
-     <Sidebar/>
-     <Profile/>
-     <About/>
-     <Skills/>
-     <Projects/>
-     <Contact/>
-     <Footer/>
+    <div className="App font-sans bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 text-white min-h-screen">
+      {/* Background Pattern */}
+      <div className="fixed inset-0 bg-[url('./assets/Meteor.svg')] opacity-10 pointer-events-none"></div>
+      
+      {/* Main Content */}
+      <div className="relative z-10">
+        <Navbar/>
+        <Sidebar/>
+        <Profile/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+      </div>
     </div>
   );
 }

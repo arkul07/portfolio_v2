@@ -1,10 +1,28 @@
 import React from "react";
-import SkillsCard from "../components/SkillsCard";
-import useMediaQuery from "../Hooks/useMediaQuery";
+import { motion } from "framer-motion";
+import SkillsInteractive from "../components/SkillsInteractive";
 
 function Skills() {
 
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.1,
+        staggerChildren: 0.05
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 10, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.3, ease: "easeOut" }
+    }
+  };
 
   const frontendskills = [
     {
@@ -38,9 +56,9 @@ function Skills() {
       proficiency:3
     },
     {
-      name:"Typescript",
+      name:"TypeScript",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      proficiency:1
+      proficiency:3
     },
     {
       name:"Redux.js",
@@ -55,81 +73,123 @@ function Skills() {
     {
       name:"TailwindCSS",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+      proficiency:3
+    },
+    {
+      name:"Next.js",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       proficiency:2
     },
   ]
 
   const backendskills = [
     {
-      name:"Node.js",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
-      proficiency:2
+      name:"Python",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      proficiency:3
     },
-    {
-      name:"Spring",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
-      proficiency:2
-    },
-    {
-      name:"MongoDB",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-      proficiency:2
-    },
-    {
-      name:"MySQL",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
-      proficiency:2
-    },
-  ]
-
-  const otherskills = [
     {
       name:"Java",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
       proficiency:3
     },
     {
-      name:"C Programming",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+      name:"FastAPI",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       proficiency:3
     },
     {
-      name:"Python",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      name:"Spring Boot",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg",
+      proficiency:3
+    },
+    {
+      name:"Node.js",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+      proficiency:3
+    },
+    {
+      name:"Flask",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
       proficiency:2
     },
     {
-      name:"Pytorch",
+      name:"REST APIs",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      proficiency:3
+    },
+    {
+      name:"Microservices",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg",
+      proficiency:3
+    },
+  ]
+
+  const otherskills = [
+    {
+      name:"PyTorch",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
-      proficiency:1
+      proficiency:3
+    },
+    {
+      name:"TensorFlow",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      proficiency:2
+    },
+    {
+      name:"Scikit-learn",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      proficiency:3
+    },
+    {
+      name:"AWS",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+      proficiency:3
     },
     {
       name:"Docker",
       icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg",
-      proficiency:1
+      proficiency:3
     },
     {
-      name:"Git/Github",
-      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      name:"Kubernetes",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
+      proficiency:2
+    },
+    {
+      name:"Jenkins",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      proficiency:2
+    },
+    {
+      name:"Terraform",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+      proficiency:2
+    },
+    {
+      name:"PostgreSQL",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      proficiency:3
+    },
+    {
+      name:"MongoDB",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+      proficiency:3
+    },
+    {
+      name:"Redis",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+      proficiency:2
+    },
+    {
+      name:"C++",
+      icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
       proficiency:2
     },
   ]
 
-  const frontendElements = frontendskills.map((skill) => {
-    return (
-      <SkillsCard skill={skill}/>
-    )
-  })
-  const backendElements = backendskills.map((skill) => {
-    return (
-      <SkillsCard skill={skill}/>
-    )
-  })
-  const otherElements = otherskills.map((skill) => {
-    return (
-      <SkillsCard skill={skill}/>
-    )
-  })
+  // Combine all skills for 3D visualization
+  const allSkills = [...frontendskills, ...backendskills, ...otherskills];
 
 
 
@@ -137,21 +197,72 @@ function Skills() {
 
 
   return (
-    <div className={isDesktop ? "p-20" : "p-10"} id="skills">
-    <div className="text-3xl text-neon-green text-center mt-5">My Skills</div>
-      <div>
-        <div className="text-xl mt-10 text-black bg-neon-green pl-2">Frontend Web Development</div>
-        <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{frontendElements}</div>
+    <motion.section 
+      className="py-20 px-4 md:px-20" 
+      id="skills"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      <div className="max-w-7xl mx-auto">
+        <motion.div 
+          className="text-center mb-16"
+          variants={itemVariants}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+            My Skills
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
+          <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto">
+            Interactive 3D visualization of my technical skills and proficiency levels
+          </p>
+        </motion.div>
+
+        <motion.div 
+          className="mb-16"
+          variants={itemVariants}
+        >
+          <SkillsInteractive skillsData={allSkills} />
+        </motion.div>
+
+        {/* Skill categories breakdown */}
+        <motion.div 
+          className="grid md:grid-cols-3 gap-8 mt-16"
+          variants={itemVariants}
+        >
+          <div className="text-center">
+            <div className="text-2xl font-semibold mb-4 text-white flex items-center justify-center">
+              <div className="w-2 h-8 bg-gradient-to-b from-primary-500 to-accent-500 rounded-full mr-4"></div>
+              Frontend
+            </div>
+            <div className="text-gray-300">
+              {frontendskills.length} technologies
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <div className="text-2xl font-semibold mb-4 text-white flex items-center justify-center">
+              <div className="w-2 h-8 bg-gradient-to-b from-accent-500 to-primary-500 rounded-full mr-4"></div>
+              Backend
+            </div>
+            <div className="text-gray-300">
+              {backendskills.length} technologies
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <div className="text-2xl font-semibold mb-4 text-white flex items-center justify-center">
+              <div className="w-2 h-8 bg-gradient-to-b from-primary-500 to-accent-500 rounded-full mr-4"></div>
+              AI/ML & DevOps
+            </div>
+            <div className="text-gray-300">
+              {otherskills.length} technologies
+            </div>
+          </div>
+        </motion.div>
       </div>
-      <div>
-        <div className="text-xl mt-10 text-black bg-neon-green pl-2">Backend Web Development</div>
-        <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{backendElements}</div>
-      </div>
-      <div>
-        <div className="text-xl mt-10 text-black bg-neon-green pl-2">Others</div>
-        <div className="flex justify-center flex-wrap p-5 bg-dark-jungle-green">{otherElements}</div>
-      </div>
-    </div>
+    </motion.section>
   );
 }
 
